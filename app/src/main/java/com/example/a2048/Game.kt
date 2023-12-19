@@ -1,11 +1,6 @@
 package com.example.a2048
 
 import android.content.Context
-import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import kotlin.properties.Delegates
 
 class Game(context: Context) {
     enum class EStatus { Ready, Fail, Win}
@@ -22,6 +17,6 @@ class Game(context: Context) {
     }
 
     fun undo(){
-//        grid.setTable(grid.oldTable!!)
+        grid.undo()
     }
 }
